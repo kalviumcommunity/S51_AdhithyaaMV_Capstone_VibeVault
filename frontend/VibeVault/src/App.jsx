@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+// import image1 from "../assets/Group 7.png"
+
 
 
 function App() {
@@ -7,7 +9,12 @@ function App() {
 
   return (
     <>
-      <h1 id='topic'>VibeVault</h1>
+
+     <div className='main'>
+    <img src={image1} alt="Example" />
+
+    </div> 
+    
     </>
   )
 }

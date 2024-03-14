@@ -1,29 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 body{
-  background-image: url('./assets/b3.png');
-  background-size: cover;
-  display: block;
-}
-
-#topic{
-  font-family: "Alex Brush", cursive;
-  color: aliceblue;
-  font-size: 115px;
-  font-weight:400;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    font-family: "Alata", sans-serif; 
 }
 
 
 
+.main{
+    display: flex;
+    justify-content: center;
+}
 
-@media (max-width) {
-  
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    text-align: center;
+    height: 400px;
 }
