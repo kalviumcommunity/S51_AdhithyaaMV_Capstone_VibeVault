@@ -15,7 +15,7 @@ function Navbar() {
        
 
       </div>
-      <h1>VIBE VAULT</h1>
+      <h1>HÅnG IN</h1>
     </div>
   );
 }
