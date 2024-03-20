@@ -1,23 +1,18 @@
-import React from 'react';
-import "./App.css"
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Upload from './Components/Upload'
+import Navbar from "./Components/NavBar";
 
-function Navbar() {
-  return (
-    <div>
-      
-      <div className="navbar">
-        <a href="#">Home</a>
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
-        <div className="search-container">
-          <input type="text" placeholder="Search" />
-        </div>
-       
-
-      </div>
-      <h1>HÅnG IN</h1>
-    </div>
-  );
+function App(){
+  return(
+    <BrowserRouter>
+      <>
+        <Navbar/>
+        <Routes>
+          <Route path="/upload" element={<Upload />} />
+        </Routes>
+      </>
+    </BrowserRouter>
+  )
 }
-
-export default Navbar;
+export default App;
