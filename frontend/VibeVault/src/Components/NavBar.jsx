@@ -15,7 +15,7 @@ function Navbar() {
                     <input type="text" placeholder="Search" />
                 </div>
             </div>
-            <h1>HÅnG IN</h1>
+            <h1>Vibe Vault</h1>
         </div>
     );
 }

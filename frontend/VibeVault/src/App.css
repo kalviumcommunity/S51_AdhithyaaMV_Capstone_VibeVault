@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins&family=Prompt&family=Qwitcher+Grypen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 body{
-  background-image: url(../assets/b.jpg);
+  background-image: url(../assets/05.png);
   background-size: cover;
 }
 
 h1{
-    font-family: monospace;
+    font-family: "Dancing Script", cursive;
     color: rgba(255, 255, 255, 0.573);
     font-size: 200px;
     display: flex;
@@ -14,27 +17,36 @@ h1{
     
 }
 
+
 #Upload{
     font-family: monospace;
-    color: rgb(0, 255, 26);
+    color: rgb(255, 255, 255);
     font-size: 200px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 50px;
+    text-decoration:none;
     
 }
 
 #Uploadcircle{
-    width: 300px; 
-    height: 100px;
-    border-radius: 50%; 
-    background-color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    left: 585px;
-    bottom: 70px;
+    overflow: hidden;
+    height: 7q0px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+#Uploadcircle a:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+
+}
+
+
 
 .navbar {
     overflow: hidden;
@@ -51,12 +63,12 @@ h1{
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-family: monospace;
-    font-size: xx-large;
+    font-family: "Alata", sans-serif;
+    font-size: x-large;
 }
   
 .navbar a:hover {
-    background-color:rgb(255, 0, 0);
+    background-color:rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 15px;
 }
@@ -74,6 +86,7 @@ h1{
     background-color: #000000;
     border: none;
     font-size: 17px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    color:white;
 }
   

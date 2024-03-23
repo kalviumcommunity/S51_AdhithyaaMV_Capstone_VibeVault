@@ -7,9 +7,11 @@ function App() {
   
     return (
       <>
-      <div id="Uploadcircle"></div>
-      <div id='Upload'>UPLOAD</div> 
-
+      <div id="Uploadcircle">
+        <a href='#' id='Upload'>
+        UPLOAD
+        </a> 
+      </div>
       </>
     )
   }
