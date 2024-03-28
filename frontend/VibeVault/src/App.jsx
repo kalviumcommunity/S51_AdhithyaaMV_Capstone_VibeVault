@@ -1,36 +1,34 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useEffect } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Upload from './Components/Upload'
+import Navbar from "./Components/NavBar";
+import Login from "./Components/Login";   
+import Moodpage from "./Components/Moodpage";
+import back_img1 from "../assets/01.png"
+import back_img2 from "../assets/02.png"
+import back_img3 from "../assets/03.png";
+import back_img4 from "../assets/04.png";
+import back_img5 from "../assets/05.png";
 
+function App(){
 
-
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-
-    <div className='main'><h1>VIBE VAULT</h1></div>
-    <div className='about'>
-    Introducing Vibe Vault, a unique project designed to enhance your entertainment experience. 
-    Users simply select their current mood, and are seamlessly guided to a subsequent page where they can choose between music, movies, or web series. 
-    The platform then prompts users to specify their language preference, presenting curated options tailored to their selections. 
-    Dive into personalized entertainment with Vibe Vault and let your mood guide the way!"
-    </div>
-    
-    <div className='wrapper'>
-      <form action="">
-          <h1>Login</h1>
-          <div className='input-box'>
-            <input type="text" placeholder='Username' />
-            <input type="password" placeholder='password' />
-
-          </div>
-      </form>
-    </div>
-    
-    </>
+  useEffect(()=>{
+    const images = [back_img1, back_img2, back_img3, back_img4, back_img5];
+    const randomNumber = Math.floor(Math.random() * images.length);
+    document.body.style.backgroundImage = `url(${images[randomNumber]})`;
+  }, []);
+  return(
+    <BrowserRouter>
+      <>
+        {/* <Navbar/> */}
+        <Routes>
+          <Route path="/" element={<Navbar/>}></Route>
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/moodpage" element={<Moodpage />} />
+        </Routes>
+      </>
+    </BrowserRouter>
   )
 }
-
-export default App
+export default App;

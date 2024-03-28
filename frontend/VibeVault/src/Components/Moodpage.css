@@ -1,0 +1,48 @@
+/* Styling for <h1> elements */
+h1 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 3em; /* Adjust font size as needed */
+}
+
+/* Styling for the container of emotions */
+.emotions {
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Evenly distribute items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling for individual emotion elements */
+.e1 {
+    background-color: rgb(255, 0, 0); /* Red */
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em; /* Adjust font size as needed */
+    position: relative; /* Position relative for absolute positioning of effect */
+}
+
+.e1::before {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position absolutely within the .e1 container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border-radius: 50%; /* Make it a circle */
+    transform: scale(0); /* Initially hidden */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.e1:hover::before {
+    transform: scale(2); /* Scale up on hover */
+}
+

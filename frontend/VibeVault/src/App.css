@@ -1,31 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins&family=Prompt&family=Qwitcher+Grypen:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-body{
-    font-family: "Alata", sans-serif; 
-}
 
-.main{
+#titlename{
+    font-family: "Dancing Script", cursive;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 200px;
+    
+}
+
+p{
+    color: white;
+    font-family: "Alata", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
-.about{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
-.wrapper{
-    justify-content: center;
-    border: 1px solid black;
-    height: 300px;
+.moodbut{
     width: 300px;
-    margin: auto;
+    height: 70px;
+    font-size: xx-large;
+    font-family: "Alata", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+    text-decoration: none;
 }
 
-.input-box{
-    justify-content: space-between;
-    /* margin: 10px; */
+.moodbut a:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 250px;
+}    
+
+a{
+    text-decoration: none;
+}
+
+
+#Upload{
+    font-family: "Alata", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration:none;
+    
+    
+}
+
+#Uploadcircle {
+    overflow: hidden;
+    height: 60px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.4); 
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 auto; 
+}
+
+
+#Uploadcircle a:hover{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 250px;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    height: 7q0px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: "Alata", sans-serif;
+    font-size: x-large;
+}
+  
+.navbar a:hover {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+  
+.search-container {
+    float: right;
+}
+  
+  
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+    background-color: #000000;
+    border: none;
+    font-size: 17px;
+    color:white;
+}
+  
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Alata", sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 100px;
+    color: white;
+    width: 510px;
+}
+
+form {
+    width: 500px;
+    height: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00ff51;
+    color: rgb(0, 0, 0);
 }
