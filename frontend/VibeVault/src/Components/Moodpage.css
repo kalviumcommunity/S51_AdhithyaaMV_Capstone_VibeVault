@@ -1,23 +1,19 @@
-/* Reset default margin, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply background color and padding to the body */
 body {
-    background-color: #f0f0f0;
+    background-color: #1f1f1f;
     padding: 20px;
 }
 
-/* Style for the main container */
 .main {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Style for the heading */
 h1 {
     color: #ffffff;
     font-family: "Dancing Script", cursive;
@@ -26,37 +22,34 @@ h1 {
     font-size: 80px;
 }
 
-/* Style for the container of emotions */
 .emotions {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+display:grid;
+grid-template-columns: repeat(3,1fr);   
+    
 }
 
-/* Style for individual emotion elements */
+
 .e1, .e2, .e3, .e4, .e5, .e6, .e7 {
     background-color: #fff;
     color: #000;
     font-size: 2em;
-    width: 300px;
-    height: 70px;
-    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: "Alata", sans-serif;
     position: relative;
 }
 
-/* Style for individual emotion elements on hover */
 .e1:hover::before, .e2:hover::before, .e3:hover::before, .e4:hover::before, .e5:hover::before, .e6:hover::before, .e7:hover::before {
-    transform: scale(1); /* Change scale to 1 to show the pseudo-element */
+    transform: scale(1); 
 }
 
-/* Style for pseudo-element */
 .e1::before, .e2::before, .e3::before, .e4::before, .e5::before, .e6::before, .e7::before {
     content: '';
     position: absolute;
@@ -64,8 +57,8 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(151, 255, 144, 0.516);
-    border-radius: 10px;
-    transform: scale(0); /* Initially hidden */
+    background: rgba(17, 255, 0, 0.516);
+    border-radius: 50%;
+    transform: scale(0); 
     transition: transform 0.3s ease;
 }
