@@ -8,19 +8,19 @@ function Moodpage (){
             <h1>Pick your Mood</h1>
             <div className="emotions">
 
-                <button className="e1">HAPPY</button>
+                <div className="e1">HAPPY </div>
                 
-                <button className="e1">SAD</button>
+                <div className="e2">SAD </div>
                 
-                <button className="e1">THRILL</button>
+                <div className="e3">THRILL </div>
                 
-                <button className="e1">RELAXED</button>
+                <div className="e4">RELAXED</div>
 
-                <button className="e1">SCARED</button>
+                <div className="e5">SCARED</div>
 
-                <button className="e1">INSPIRED</button>
+                <div className="e6">INSPIRED</div>
 
-                <button className="e1">HUMOROUS</button>
+                <div className="e7">HUMOROUS</div>
 
             </div>
         </div>
