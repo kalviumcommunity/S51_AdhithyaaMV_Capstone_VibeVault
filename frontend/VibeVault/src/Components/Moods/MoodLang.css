@@ -1,0 +1,31 @@
+.opt {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.langopt {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.langopt > div {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.langopt > div:hover {
+    background-color: #76ff76;
+}
+
+.tamil,.telugu,.eng{
+    
+    width: 300px;
+}
