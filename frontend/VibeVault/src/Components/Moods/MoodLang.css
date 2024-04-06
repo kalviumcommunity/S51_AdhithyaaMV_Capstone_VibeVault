@@ -19,6 +19,6 @@
 .tamil:hover,
 .telugu:hover,
 .eng:hover {
-  box-shadow: inset 10000px 0 0 0 #58d654;
+  box-shadow: inset 10000px 0 0 0 #fff200;
   color: rgb(0, 0, 0);
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #1f1f1f;
+    background-color: #000000;
     padding: 20px;
 }
 
@@ -16,7 +16,7 @@ body {
 
 h1 {
     color: #ffffff;
-    font-family: "Dancing Script", cursive;
+    font-family: "Alata", sans-serif;
     text-align: center;
     margin-bottom: 30px;
     font-size: 80px;
@@ -24,7 +24,8 @@ h1 {
 
 .emotions {
 display:grid;
-grid-template-columns: repeat(3,1fr);   
+grid-template-columns: repeat(4,1fr);   
+justify-content: center;
     
 }
 
@@ -57,7 +58,7 @@ grid-template-columns: repeat(3,1fr);
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(17, 255, 0, 0.516);
+    background: rgba(246, 255, 0, 0.64);
     border-radius: 50%;
     transform: scale(0); 
     transition: transform 0.3s ease;
