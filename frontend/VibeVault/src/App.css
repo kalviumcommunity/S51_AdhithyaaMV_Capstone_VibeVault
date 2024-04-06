@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
+
 #titlename{
     font-family: "Dancing Script", cursive;
     color: rgb(255, 255, 255);
@@ -32,6 +33,7 @@ p{
     align-items: center;
     margin: 0 auto; 
     text-decoration: none;
+    border-color: white;
 }
 
 .moodbut a:hover{
@@ -39,6 +41,7 @@ p{
     color: rgb(0, 0, 0);
     border-radius: 15px;
     width: 250px;
+    border-color: white;
 }    
 
 a{
@@ -46,48 +49,51 @@ a{
 }
 
 
-#Upload{
+.Upload {
+    position: fixed;
+    transform: rotate(-90deg);
+    left: -330px;
+    top: 270px;
+    color: yellow;
     font-family: "Alata", sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: 200px;
-    display: flex;
+    font-size: 100px;
+    background-color: #3e3e3e;
+    width: 800px;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    font-size: 50px;
-    text-decoration:none;
-    
-    
-}
-
-#Uploadcircle {
-    overflow: hidden;
-    height: 60px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.4); 
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 0 auto; 
+    transition: background-color 0.3s ease; /* Adding transition for smooth effect */
 }
 
-
-#Uploadcircle a:hover{
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 15px;
-    width: 250px;
+.Upload:hover {
+    background-color: #555; /* Change background color on hover */
 }
 
+.desc1{
+    color: rgb(255, 255, 255);
+    font-family: "Alata", sans-serif;
+    font-size: 70px;
 
+}
+
+.desc{
+    color: rgb(137, 137, 137);
+    font-family: "Alata", sans-serif;
+
+}
+
+.audiovideo{
+    width: 570px;
+}
+
+p{
+    font-size: 30px;
+}
 
 .navbar {
     overflow: hidden;
     height: 7q0px;
-    background-color: rgba(255, 255, 255, 0.4); 
+    background-color: rgb(251, 255, 0); 
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -182,6 +188,6 @@ button {
 }
 
 button:hover {
-    background-color: #00ff51;
+    background-color: #ffff00;
     color: rgb(0, 0, 0);
 }
