@@ -92,10 +92,9 @@ p{
 
 .navbar {
     overflow: hidden;
-    height: 7q0px;
     background-color: rgb(251, 255, 0); 
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
   
 .navbar a {
@@ -142,7 +141,7 @@ p{
 }
 
 h2 {
-    font-size: 100px;
+    font-size: 90px;
     color: white;
     width: 510px;
 }
@@ -181,7 +180,7 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #000000;
-    color: #fff;
+    color: #ffff00;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
