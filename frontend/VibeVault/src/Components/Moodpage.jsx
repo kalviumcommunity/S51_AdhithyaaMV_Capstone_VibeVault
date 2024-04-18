@@ -1,22 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import "../Components/Moodpage.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Moodpage (){
-    return(
-        <div className="main">
-            <h1>Pick your Mood</h1>
-            <div className="emotions">
-                <Link className="e1" to='/sad'>Sad</Link>
-                <Link className="e2" to='/happy'>Happy</Link>
-                <Link className="e3" to='/thrill'>Thrill</Link>
-                <Link className="e4" to='/relaxed'>Relaxed</Link>
-                <Link className="e5" to='/scared'>Scared</Link>
-                <Link className="e6" to='/inspired'>Inspired</Link>
-                <Link className="e7" to='/funny'>Funny</Link>
-            </div>
-        </div>
-    );
-}
+const Mood = ({ onNext }) => {
+  const handleMoodSelection = (mood) => {
+    onNext(mood);
+  };
 
-export default Moodpage;
+  return (
+    <div>
+      <h1>Pick Your Mood</h1>
+      <Link to='/language'><button onClick={() => handleMoodSelection('funny')}>Funny</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('happy')}>Happy</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('thrill')}>Thrill</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('sad')}>Sad</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('inspired')}>Inspired</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('relaxed')}>Relaxed</button></Link>
+      <Link to='/language'><button onClick={() => handleMoodSelection('scared')}>Scared</button></Link>
+    </div>
+  );
+};
+
+export default Mood;
