@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ContentSelection.css"
 
 const ContentSelection = ({ onNext }) => {
   const handleContentSelection = (content) => {
@@ -6,10 +7,14 @@ const ContentSelection = ({ onNext }) => {
   };
 
   return (
-    <div>
-      <h1>Select Your Content Type</h1>
-      <button onClick={() => handleContentSelection('music')}>Music</button>
-      <button onClick={() => handleContentSelection('movie')}>Movie/Webseries</button>
+    <div className='content'>
+      <div className='pick'>
+        <h1>Here is your Pick</h1>
+      </div>
+      <div className="btnsdiv">
+      <button className='p'onClick={() => handleContentSelection('music')}>Music</button>
+      <button className='p' onClick={() => handleContentSelection('movie')}>Movie/Webseries</button>
+      </div>
     </div>
   );
 };
