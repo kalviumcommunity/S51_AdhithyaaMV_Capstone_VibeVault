@@ -6,6 +6,8 @@ import ContentSelection from './Components/ContentSelection';
 import Login from './Components/Login'; 
 import Upload from './Components/Upload'; 
 import Navbar from './Components/NavBar'; 
+import Signup from './Components/Signup'; 
+
 
 const App = () => {
   const [selectedMood, setSelectedMood] = useState('');
@@ -43,6 +45,7 @@ const App = () => {
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/login" element={<Login />} /> 
         <Route path='/upload' element={<Upload />} />
+        <Route path='/signup' element={<Signup />} />
       </Routes>
     </Router>
   );

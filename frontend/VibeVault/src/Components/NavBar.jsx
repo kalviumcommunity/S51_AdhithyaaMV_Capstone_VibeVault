@@ -10,7 +10,7 @@ function Navbar() {
                 
                 <Link className='login' to='/login'>Login</Link>
             
-                <a  className="signup" href="#">Sign-Up</a>
+                <Link  className="signup" to="/signup">Sign-Up</Link>
                 
                 <Link className='upload' to='/upload'>Upload</Link>
                 
