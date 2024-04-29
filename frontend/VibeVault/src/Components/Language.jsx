@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Language.css"
 
 const Language = ({ onNext }) => {
   const handleLanguageSelection = (language) => {
@@ -7,11 +8,13 @@ const Language = ({ onNext }) => {
   };
 
   return (
-    <div>
-      <h1>Pick Your Language</h1>
-      <Link to='/content'><button onClick={() => handleLanguageSelection('tamil')}>Tamil</button></Link>
-      <Link to='/content'><button onClick={() => handleLanguageSelection('english')}>English</button></Link>
-      <Link to='/content'><button onClick={() => handleLanguageSelection('telugu')}>Telugu</button></Link>
+    <div className='language'>
+      <div className='selection'>
+        <h1>Pick Your Language</h1>
+      </div>
+      <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('tamil')}>Tamil</button></Link>
+      <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('english')}>English</button></Link>
+      <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('telugu')}>Telugu</button></Link>
     </div>
   );
 };

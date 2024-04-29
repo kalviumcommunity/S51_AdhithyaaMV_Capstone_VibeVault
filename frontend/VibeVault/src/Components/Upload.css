@@ -1,0 +1,18 @@
+.body{
+    background-image: url(./page.png);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+
+.Upload{
+    color: rgb(0, 255, 255);
+    font-size: 170px;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 250px;
+    right: 1150px;
+    font-family: "Jockey One", sans-serif;
+    
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Moodpage.css"
 
 const Mood = ({ onNext }) => {
   const handleMoodSelection = (mood) => {
@@ -7,15 +8,20 @@ const Mood = ({ onNext }) => {
   };
 
   return (
-    <div>
-      <h1>Pick Your Mood</h1>
-      <Link to='/language'><button onClick={() => handleMoodSelection('funny')}>Funny</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('happy')}>Happy</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('thrill')}>Thrill</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('sad')}>Sad</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('inspired')}>Inspired</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('relaxed')}>Relaxed</button></Link>
-      <Link to='/language'><button onClick={() => handleMoodSelection('scared')}>Scared</button></Link>
+    <div className='emotions'>
+      <div className='rotated-text'>
+        <h1>Pick Your Mood</h1>
+      </div>
+      <div className='links_emotions'>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('funny')}>Funny</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('happy')}>Happy</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('happy')}>Happy</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('thrill')}>Thrill</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('sad')}>Sad</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('inspired')}>Inspired</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('relaxed')}>Relaxed</button></Link>
+        <Link className='ele' to='/language'><button className='e' onClick={() => handleMoodSelection('scared')}>Scared</button></Link>
+      </div>
     </div>
   );
 };

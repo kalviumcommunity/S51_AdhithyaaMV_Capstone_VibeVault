@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "../Components/Login.css";
+import "../Components/Signup.css";
 import { auth } from '../../firebase';
 
-const Login = () => {
+const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -20,7 +20,7 @@ const Login = () => {
     return(
         <div className='log-in-container'>
             <form onSubmit={signIn}>
-                <h1>Log In</h1>
+                <h1>Sign-up</h1>
                 <input 
                     type='email'
                     placeholder='Enter email' 
@@ -41,4 +41,4 @@ const Login = () => {
     )
 };
 
-export default Login;
+export default Signup;
