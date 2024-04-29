@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import "../Components/Upload.css"
 
 
 function App() {
@@ -7,17 +7,10 @@ function App() {
   
     return (
       <>
-      <div>
-          <a href='#' className='Upload'>U P L O A D</a>
-          <div className='desc1'>Upload</div>
-        <div className='desc'>Unveil your artistic prowess here</div>
+      <div className='body'>
+          <div href='#' className='Upload'>UPLOAD</div>
 
-        <div className='audiovideo'>
-            <label htmlFor="url">Auido Or Video:</label>
-            <input type="text" placeholder='paste URL here..' />
-            <p>⬅️click here</p>
-        </div>
-
+        
       </div>
       </>
     )

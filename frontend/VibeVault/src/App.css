@@ -77,3 +77,8 @@ a{
     left: 1200px;
     bottom: 260px;
 }
+
+.moodbut:hover{
+    background-color: white;
+
+}
