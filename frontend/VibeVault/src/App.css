@@ -8,6 +8,7 @@
     background-image: url(./Components/Home3.png);
     height: 100vh;
     background-size: cover;
+    /* position: fixed; */
 }
 
 
@@ -18,6 +19,10 @@
     position: fixed;
     left: 650px;
     top: 150px;
+}
+
+#title:hover{
+    color: rgb(0, 255, 224);
 }
 
 .moodbut{
@@ -34,7 +39,7 @@
 
 .search{
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     left: 1100px;
     font-size: 30px;
     font-family: "Jockey One", sans-serif;
@@ -54,31 +59,120 @@ a{
     font-size: 45px;
 }
 
-.login{
-    position: relative;
-    left: 15px;
-}
-
-.signup{
-    position: relative;
-    left: 100px;
-}
-
-.upload{
-    position: relative;
-    left: 200px;
-}
-
-.about{
-    font-family: "Jockey One", sans-serif;
-    color: white;
-    font-size: 50px;
+.login {
     position: fixed;
-    left: 1200px;
-    bottom: 260px;
+    left: 15px;
+    top: 15px;
+    background-color: rgba(0, 0, 0); /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+/* Hover effect */
+.login:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.signup {
+    position: fixed;
+    left: 200px;
+    top: 15px;
+    background-color: rgba(0, 0, 0); /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+/* Hover effect for signup */
+.signup:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Base styling for upload */
+.upload {
+    position: fixed;
+    left: 420px;
+    top: 15px;
+    background-color: rgb(0, 0, 0); /* Dark background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 9999; /* Ensure it's on top */
+}
+
+/* Hover effect for upload */
+.upload:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.playbutton{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 1170px;
+    top: 395px;
 }
 
 .moodbut:hover{
     background-color: white;
+}
 
+.modal {
+    /* Modal background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    /* Modal content */
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    position: relative;
+    max-width: 80%; /* Adjust as needed */
+}
+
+.close {
+    /* Close button */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.close{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    z-index: 9999;
+}
+
+video {
+    /* Video styling */
+    width: 100%;
+    height: auto;
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../Components/Login.css";
 import { auth } from '../../firebase';
 
 const Login = () => {

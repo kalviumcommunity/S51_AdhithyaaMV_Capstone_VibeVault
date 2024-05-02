@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../App.css";
-// import AppRoutes from "./AppRoutes";
 import { Link } from 'react-router-dom';
+import playbut from '../assets/Group2.png';
+import expvideo from '../assets/myvideo.mp4'
 
 function Navbar() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className='nav_body'>
             <div className="navbar">
-                
                 <Link className='login' to='/login'>Login</Link>
-            
-                <Link  className="signup" to="/signup">Sign-Up</Link>
-                
+                <Link className="signup" to="/signup">Sign-Up</Link>
                 <Link className='upload' to='/upload'>Upload</Link>
-                
-                <div className="search-container">
-                
+            </div>
+
+            <div className="search-container">
                 <input className="search" type="text" placeholder="Search" />
-                
-                </div>
             </div>
             
             <div id='title'>
@@ -30,9 +36,24 @@ function Navbar() {
             </div>
 
             <div className='about'>
-                ABOUT
+                {/* Use the playbut image here */}
+                <img className='playbutton' src={playbut} alt="Play button" onClick={openModal} />
             </div>
 
+              {/* Modal */}
+              {isModalOpen && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        slfjorhgihi
+                        {/* Video */}
+                        <video controls>
+                            <source src={expvideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
