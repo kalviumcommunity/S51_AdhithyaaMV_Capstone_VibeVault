@@ -18,13 +18,14 @@ function Navbar() {
     return (
         <div className='nav_body'>
             <div className="navbar">
+                
                 <Link className='login' to='/login'>Login</Link>
                 <Link className="signup" to="/signup">Sign-Up</Link>
                 <Link className='upload' to='/upload'>Upload</Link>
             </div>
 
             <div className="search-container">
-                <input className="search" type="text" placeholder="Search" />
+                <input className="search" type="text" placeholder="Search your playlist/movies" />
             </div>
             
             <div id='title'>
@@ -36,17 +37,17 @@ function Navbar() {
             </div>
 
             <div className='about'>
-                {/* Use the playbut image here */}
+                
                 <img className='playbutton' src={playbut} alt="Play button" onClick={openModal} />
             </div>
 
-              {/* Modal */}
+            
               {isModalOpen && (
                 <div className="modal">
                     <div className="modal-content">
                         <span className="close" onClick={closeModal}>&times;</span>
-                        slfjorhgihi
-                        {/* Video */}
+                        Explanation
+                        
                         <video controls>
                             <source src={expvideo} type="video/mp4" />
                             Your browser does not support the video tag.

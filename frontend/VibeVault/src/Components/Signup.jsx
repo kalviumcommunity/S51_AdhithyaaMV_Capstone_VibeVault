@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "../Components/Signup.css";
-import { auth } from '../../firebase';
 
 const Signup = () => {
     const [email, setEmail] = useState('');
@@ -17,16 +16,19 @@ const Signup = () => {
         })
     }
 
+    
     return(
         <div className='log-in-container'>
             <form onSubmit={signIn}>
-                <h1>Sign-up</h1>
+                <div className='Signup'>Sign-up</div>
+
                 <input 
                     type='email'
                     placeholder='Enter email' 
                     value={email} 
                     onChange={(e) => setEmail(e.target.value)}>
                 </input>
+                
                 <input 
                     type='password' 
                     placeholder='Enter password' 

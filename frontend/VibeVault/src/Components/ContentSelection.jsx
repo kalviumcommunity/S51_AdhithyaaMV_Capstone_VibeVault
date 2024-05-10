@@ -20,7 +20,7 @@ const ContentSelection = ({ selectedMood, selectedLanguage, filteredData }) => {
       
       <div className="data-container">
         <h2>Filtered Data:</h2>
-        <ul>
+        <ul className='datagrid'>
           {filteredData.map((item, index) => (
             <li key={index}>
               <p>Mood: {item.Mood}</p>

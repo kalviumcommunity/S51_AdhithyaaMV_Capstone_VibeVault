@@ -30,21 +30,17 @@ const App = () => {
     }
   };
 
-  // Function to filter and sort data based on selected options
   const filterAndSortData = async (mood, language) => {
     const data = await fetchData();
     if (!data) {
       return [];
     }
 
-    // Filter data based on selected options
     const filteredData = data.filter(item => item.Mood === mood && item.Language === language);
 
-    // Sort filtered data based on mood and language
     filteredData.sort((a, b) => {
       if (a.Mood < b.Mood) return -1;
       if (a.Mood > b.Mood) return 1;
-      // If mood is same, then sort based on language
       if (a.Language < b.Language) return -1;
       if (a.Language > b.Language) return 1;
       return 0;

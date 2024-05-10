@@ -42,11 +42,12 @@
 }
 
 .data-container {
-  width: 80%;
-  display: grid;
+  width: 100%;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); /* Display in three columns */
-  gap: 20px; /* Adjust the gap between grid items */
+  gap: 20px;  */
 }
+
 
 .data-container h2 {
   color: rgb(0, 255, 224);
@@ -58,6 +59,10 @@
 .data-container ul {
   list-style: none;
   padding: 0;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); /* Display in three columns */
+  gap: 20px;
 }
 
 .data-container ul li {
