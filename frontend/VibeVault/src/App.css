@@ -21,9 +21,7 @@
     top: 150px;
 }
 
-#title:hover{
-    color: rgb(0, 255, 224);
-}
+
 
 .moodbut{
     font-family: "Jockey One", sans-serif;
@@ -63,8 +61,7 @@ a{
     position: fixed;
     left: 15px;
     top: 15px;
-    background-color: rgba(0, 0, 0); 
-    color: #fff; 
+    color: #000000; 
     padding: 10px 20px; 
     border-radius: 8px; 
     transition: background-color 0.3s ease; 
@@ -73,16 +70,15 @@ a{
 
 
 .login:hover {
-    background-color: #fff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .signup {
     position: fixed;
     left: 200px;
     top: 15px;
-    background-color: rgba(0, 0, 0); 
-    color: #fff; 
+    color: #000000; 
     padding: 10px 20px; 
     border-radius: 8px; 
     transition: background-color 0.3s ease; 
@@ -90,16 +86,15 @@ a{
 }
 
 .signup:hover {
-    background-color: #fff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .upload {
     position: fixed;
     left: 420px;
     top: 15px;
-    background-color: rgb(0, 0, 0); 
-    color: #fff; 
+    color: #000000; 
     padding: 10px 20px; 
     border-radius: 8px; 
     transition: background-color 0.3s ease; 
@@ -107,8 +102,8 @@ a{
 }
 
 .upload:hover {
-    background-color: #fff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .playbutton{

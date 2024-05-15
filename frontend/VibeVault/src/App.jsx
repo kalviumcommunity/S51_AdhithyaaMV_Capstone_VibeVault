@@ -11,8 +11,8 @@ import HomePage from './Components/Home';
 
 
 const App = () => {
-  const [selectedMood, setSelectedMood] = useState('');
-  const [selectedLanguage, setSelectedLanguage] = useState(''); 
+  const [selectedMood, setSelectedMood] = useState(null);
+  const [selectedLanguage, setSelectedLanguage] = useState(null); 
   const [filteredData, setFilteredData] = useState([]);
 
   console.log(filteredData)
@@ -24,6 +24,7 @@ const App = () => {
         throw new Error('Failed to fetch data');
       }
       const data = await response.json();
+      console.log('Fetched data:', data); // Log the fetched data
       return data;
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -32,11 +33,13 @@ const App = () => {
 
   const filterAndSortData = async (mood, language) => {
     const data = await fetchData();
+    console.log(data);
     if (!data) {
       return [];
-    }
-
-    const filteredData = data.filter(item => item.Mood === mood && item.Language === language);
+    }   
+    console.log(mood,language)
+    const filteredData = data.filter(item => item.mood === mood &&  item.language === language);
+    console.log(filteredData)
 
     filteredData.sort((a, b) => {
       if (a.Mood < b.Mood) return -1;
@@ -57,20 +60,15 @@ const App = () => {
         })
         .catch(error => console.error('Error filtering and sorting data:', error));
     }
+    // fetchData()
   }, [selectedMood, selectedLanguage]);
 
   const handleMoodNext = (mood) => {
-    setSelectedMood((prevMood) => {
-      console.log("New Mood:", mood);
-      return mood;
-    });
+    setSelectedMood(mood);
   };
 
   const handleLanguageNext = (language) => {
-    setSelectedLanguage((prevLanguage) => {
-      console.log("New Language:", language);
-      return language;
-    });
+    setSelectedLanguage(language);
   };
 
   return (

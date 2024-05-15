@@ -63,6 +63,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); /* Display in three columns */
   gap: 20px;
+  color: white;
 }
 
 .data-container ul li {
