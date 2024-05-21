@@ -8,6 +8,7 @@
     background-image: url(./Components/Home3.png);
     height: 100vh;
     background-size: cover;
+    
 }
 
 
@@ -19,6 +20,8 @@
     left: 650px;
     top: 150px;
 }
+
+
 
 .moodbut{
     font-family: "Jockey One", sans-serif;
@@ -34,11 +37,11 @@
 
 .search{
     background-color: transparent;
-    position: absolute;
-    left: 1100px;
+    position: fixed;
+    left: 900px;
     font-size: 30px;
     font-family: "Jockey One", sans-serif;
-    width: 350px;
+    width: 550px;
     color: white;
     border: none;
     border-bottom: 2px solid white;
@@ -54,31 +57,113 @@ a{
     font-size: 45px;
 }
 
-.login{
-    position: relative;
-    left: 15px;
-}
-
-.signup{
-    position: relative;
-    left: 100px;
-}
-
-.upload{
-    position: relative;
-    left: 200px;
-}
-
-.about{
-    font-family: "Jockey One", sans-serif;
-    color: white;
-    font-size: 50px;
+.login {
     position: fixed;
-    left: 1200px;
-    bottom: 260px;
+    left: 15px;
+    top: 15px;
+    color: #000000; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    z-index: 9999; 
+}
+
+
+.login:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.signup {
+    position: fixed;
+    left: 200px;
+    top: 15px;
+    color: #000000; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    z-index: 9999; 
+}
+
+.signup:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.upload {
+    position: fixed;
+    left: 420px;
+    top: 15px;
+    color: #000000; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    z-index: 9999; 
+}
+
+.upload:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.playbutton{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 1170px;
+    top: 395px;
 }
 
 .moodbut:hover{
     background-color: white;
+}
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    position: relative;
+    max-width: 80%; 
+}
+
+.close {
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.close{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    z-index: 9999;
+}
+
+video {
+    
+    width: 100%;
+    height: auto;
 }
