@@ -25,7 +25,7 @@ function Navbar() {
             </div>
 
             <div className="search-container">
-                <input className="search" type="text" placeholder="Search your playlist/movies" />
+                <input className="search" type="text" placeholder="Search Example  " />
             </div>
             
             <div id='title'>

@@ -10,6 +10,7 @@ function App() {
     <>
       <div className='body'>
           <div href='#' className='Upload'>UPLOAD</div>
+          <div className='back'>BACK</div>
           <nav>
           <div className='title'>
             <img className="img" src={img} alt="" />

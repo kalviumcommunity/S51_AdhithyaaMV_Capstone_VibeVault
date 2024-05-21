@@ -41,11 +41,32 @@
   margin-bottom: 20px;
 }
 
+.back {
+  position: fixed;
+  left: 1350px;
+  font-size: 30px;
+  font-family: "Jockey One", sans-serif;
+  width: 100px;
+  color: rgb(0, 255, 224);
+  bottom: 680px;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 255, 224);
+  cursor: pointer;
+}
+
+.back:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+
 .data-container {
   width: 100%;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); /* Display in three columns */
-  gap: 20px;  */
+  gap: 20px;  
 }
 
 
