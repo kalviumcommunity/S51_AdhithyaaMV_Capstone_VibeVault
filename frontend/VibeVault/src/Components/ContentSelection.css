@@ -42,9 +42,10 @@
 }
 
 .back {
-  position: fixed;
+  position: absolute;
   left: 1350px;
-  font-size: 30px;
+  top: 30px;
+  font-size: 30px; 
   font-family: "Jockey One", sans-serif;
   width: 100px;
   color: rgb(0, 255, 224);
@@ -54,9 +55,19 @@
   border-radius: 10px;
   border: 2px solid rgb(0, 255, 224);
   cursor: pointer;
+  height: 45px;
 }
 
+/* .back:hover{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  top: 30px;
+} */
+
 .back:hover{
+  height: 50px;
+  font-size: 30px;
   background-color: white;
   color: black;
   border: 2px solid rgb(0, 0, 0);
