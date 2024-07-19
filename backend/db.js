@@ -19,10 +19,13 @@ const disconnectFromDB = async () => {
   }
 };
 
+const isConnected=async()=>{
+  return (mongoose.connection.readystate===1)
+}
 
 
 module.exports = {
   connectToDB,
   disconnectFromDB,
-  mongooseConnection: mongoose.connection,
+  isConnected
 };
