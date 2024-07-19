@@ -14,7 +14,7 @@ const port = process.env.PUBLIC_PORT ?? 8000;
 app.get('/', (req, res) => {
   res.json({
     message: 'o_O',
-    database: isConnected() ? 'connected' : 'disconnected'
+    database: isConnected ? 'connected' : 'disconnected'
   })
 });
 
