@@ -1,35 +1,60 @@
 import React, { useState } from 'react';
 
 const Login = () => {
+    
     const [email, setEmail] = useState('');
+    
     const [password, setPassword] = useState('');
 
+    
     const signIn = (e) => {
+    
         e.preventDefault();
+    
         signInWithEmailAndPassword(auth, email, password)
+    
         . then((userCredential) => {
+    
             console.log(userCredential);
+    
         })
+    
         . catch((error)=>{
+    
             console.log(error);
+    
         })
+    
     }
-
-    return(
+return(
         <div className='log-in-container'>
+
             <form onSubmit={signIn}>
+            
             <div className='Signup'>Login</div>
+            
                 <input 
-                    type='email'
-                    placeholder='Enter email' 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)}>
+            
+            type='email'
+            
+            placeholder='Enter email' 
+            
+            value={email} 
+            
+            onChange={(e) => setEmail(e.target.value)}>
+            
                 </input>
+            
                 <input 
-                    type='password' 
-                    placeholder='Enter password' 
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}>
+            
+            type='password' 
+            
+            placeholder='Enter password' 
+            
+            value={password}
+            
+            onChange={(e) => setPassword(e.target.value)}>
+            
                 </input>
 
                 <button type='submit'>Log In</button>
