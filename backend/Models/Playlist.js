@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
 const { type } = require("os");
 
-
-
-
 const PlaylistSchema = new mongoose.Schema({
   name: { type: String, required: true },
   type: { type: String, required: true },
