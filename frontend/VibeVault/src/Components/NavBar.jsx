@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "../App.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import playbut from '../assets/Group2.png';
 import expvideo from '../assets/myvideo.mp4';
+import VibeVaultGemini from "./VibeVaultGemini";
 
 function Navbar() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentQuote, setCurrentQuote] = useState('');
+    const navigate = useNavigate();
 
     const quotes = [
         "Movies and music are universal languages that speak to the heart without boundaries",
@@ -55,6 +57,7 @@ function Navbar() {
                     <Link className='login' to='/login'>Login</Link>
                     <Link className="signup" to="/signup">SignUp</Link>
                     <Link className='upload' to='/upload'>Upload</Link>
+                   <div className='chatbot'> <button onClick={() => navigate('/bot')}>Chatbot</button></div>
                 </div>
                 <div id='title'>
                     <div id='titlename'>Vibe Vault</div>
@@ -81,6 +84,7 @@ function Navbar() {
                             </video>
                         </div>
                     </div>
+                    
                 )}
             </div>
         </>

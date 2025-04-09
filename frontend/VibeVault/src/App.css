@@ -191,6 +191,24 @@ a{
     color: rgb(255, 255, 255);
 }
 
+
+
+.chatbot button {
+    /* position: fixed; */
+    /* left: 15px;
+    top: 15px; */
+    color: #000000; 
+    background-color: #00ffea;
+    border-color:#00000000;
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+    z-index: 9999; 
+    font-family: "Jockey One", sans-serif;
+    font-size: 44px;
+    transition: background-color 0.3s ease; 
+}
+
 .playbutton{
     height: 100px;
     width: 100px;

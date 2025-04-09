@@ -22,6 +22,7 @@ const Language = ({ onNext }) => {
       <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('Tamil')}>Tamil</button></Link>
       <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('English')}>English</button></Link>
       <Link className='la' to='/content'><button className='l' onClick={() => handleLanguageSelection('Telugu')}>Telugu</button></Link>
+       
       </div>
     </div>
   );
