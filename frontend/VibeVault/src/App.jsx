@@ -8,6 +8,7 @@ import Upload from './Components/Upload';
 import Navbar from './Components/NavBar';
 import Signup from './Components/Signup';
 import HomePage from './Components/Home';
+import VibeVaultGemini from './Components/VibeVaultGemini';
 
 
 const App = () => {
@@ -82,6 +83,8 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path='/upload' element={<Upload />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/bot' element={<VibeVaultGemini />} />
+        
       </Routes>
     </Router>
   );
